@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <wiringpi.h>
+#include <wiringPi.h>
 
-#define LED-PIN 26
+#define LED_PIN 25
 int main(){
-  printf("testing led...\n');
-  wintingPiSetup();
+  wiringPiSetup();
   pinMode(LED_PIN, OUTPUT);
   while(1){
     digitalWrite(LED_PIN, HIGH);
@@ -12,4 +11,4 @@ int main(){
     digitalWrite(LED_PIN, LOW);
     delay(500);
     }
-    RETURN(1);
+}
