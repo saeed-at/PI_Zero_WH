@@ -12,6 +12,6 @@
   - To see `Pinout` of the board :
  
     https://www.etechnophiles.com/raspberry-pi-zero-gpio-pinout-specifications-programming-language/
-  - `Documentation` of the boad : 
+  - `Documentation` of the board : 
  
     https://www.raspberrypi.com/documentation/
