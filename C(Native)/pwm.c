@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-conts int PWM_PIN = 13;
+const int PWM_PIN = 13;
 
 int main(){
     wiringPiSetupGpio();
@@ -16,7 +16,7 @@ int main(){
         for(int i=0;i<101;i+=10){
             pwmWrite(PWM_PIN, i);       
             pwmWrite(PWM_PIN, duty_cycle);
-            delay(500)
+            delay(500);
         }
     }
 }
