@@ -15,7 +15,6 @@ int main(){
     while(1){
         for(int i=0;i<101;i+=10){
             pwmWrite(PWM_PIN, i);       
-            pwmWrite(PWM_PIN, duty_cycle);
             delay(500);
         }
     }
