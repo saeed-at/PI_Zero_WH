@@ -15,3 +15,5 @@
   - `Documentation` of the board : 
  
     https://www.raspberrypi.com/documentation/
+  - `Multi Threading` on Raspberry Pi :
+              https://makergram.com/community/topic/29/multi-thread-handling-for-normal-processes-using-python/4
