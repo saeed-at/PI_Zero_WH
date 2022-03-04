@@ -1,4 +1,4 @@
-import RPi.GPIO as GPIO
+mport RPi.GPIO as GPIO
 import time
 import threading
 
@@ -14,7 +14,10 @@ GPIO.setup(Gled,GPIO.OUT)
 GPIO.setwarnings(False)
 
 def blue():
+        i=0
         while True:
+                print(f"stage----------{i}---------- at blue")
+                i+=1
                 start = time.time()
                 print ("LED BLUE is  ON")
                 GPIO.output(Gled,GPIO.LOW)
@@ -25,7 +28,9 @@ def blue():
                 end = time.time()
                 print(f"Time taken to blink Blue LED is : {end - start}")
 def red():
+        j=0
         while True:
+                print(f"stage {j} at red")
                 start = time.time()
                 print ("LED RED is  ON")
                 GPIO.output(Rled,GPIO.LOW)
@@ -43,3 +48,4 @@ t2 = threading.Thread(target=red)
 
 t1.start()
 t2.start()
+
